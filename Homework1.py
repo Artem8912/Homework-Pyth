@@ -65,11 +65,8 @@ def search_contact():
     search = input("Укажите данные для поиска: ").title()
     contacts_list = readfile1().split("\n\n")
     contacts_list.pop()
-    # print(contacts_list)
     for contact_str in contacts_list:
-        # print(contact_str)
         contact_lst = contact_str.replace("\n"," ").split(" ")
-        # print(contact_lst)
         if search in contact_lst[i_search_param]:
             print(*contact_lst)
     
